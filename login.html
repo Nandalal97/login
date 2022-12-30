@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login</title>
+<style>
+  
+#form{
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        height: 300px;
+        font-weight: bold; 
+         
+    }
+.main input{
+            width: 305px;
+            padding: 5px;
+        
+        }
+#submit{
+            width: 320px;
+            padding: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #e4d610;
+            border: none;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            
+            <form id="form" method="post" name="myform">
+                <h1 style="text-align: center;">Login</h1>
+                <label>User Name :</label> <br>
+                <input type="text" name="username" id="username"/> <br><br>
+                <label>Password :</label> <br>
+                <input type="password" name="password" id="password"/> <br><br>
+                <input type="button" value="Login" id="submit" onclick="validate()"/>
+            </form>
+
+        </div>
+    </div>
+
+
+<script>
+     // Variable to count number of attempts.
+// Below function Executes on click of login button.
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "admin@admin.com" && password == "123456"){
+alert ("Login successfully");
+window.location = "index.html"; // Redirecting to other page.
+return false;
+
+}
+else{
+alert("Incorrect email or password")
+}
+}
+</script>
+</body>
+</html>
