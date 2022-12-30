@@ -1,1 +1,1 @@
-# login
+# login create Log in from using HTML,CSS and Javascript.on the login page, after entering the email address and password, if the email address is admin@admin.com and the password is 123456, display an alert saying, "Login successful". Otherwise, display an alert saying, "Incorrect email or password".
